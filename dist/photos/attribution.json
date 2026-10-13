@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "file": "./photos/photo-0.jpg",
+    "title": "Long corridor with someone sitting on the floor in the distance at Marina Bay MRT Station Singapore.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Long_corridor_with_someone_sitting_on_the_floor_in_the_distance_at_Marina_Bay_MRT_Station_Singapore.jpg",
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "id": 2,
+    "file": "./photos/photo-2.jpg",
+    "title": "Lone tree in winter landscape (50875379372).jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Lone_tree_in_winter_landscape_(50875379372).jpg",
+    "author": "Hefin Owen from Wales",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+    "id": 4,
+    "file": "./photos/photo-4.jpg",
+    "title": "Archway to the Courtyard - geograph.org.uk - 656435.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Archway_to_the_Courtyard_-_geograph.org.uk_-_656435.jpg",
+    "author": "Peter Church",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+    "id": 7,
+    "file": "./photos/photo-7.jpg",
+    "title": "Person skimming stone at beach during sunset.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Person_skimming_stone_at_beach_during_sunset.jpg",
+    "author": "OutdoorAcorn",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "id": 10,
+    "file": "./photos/photo-10.jpg",
+    "title": "Mount Shasta, Lake Siskiyou, SW view.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Mount_Shasta,_Lake_Siskiyou,_SW_view.jpg",
+    "author": "Radomianin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "id": 11,
+    "file": "./photos/photo-11.jpg",
+    "title": "Zagedan Lakes, Mountain cirque, Caucasus Mountains.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Zagedan_Lakes,_Mountain_cirque,_Caucasus_Mountains.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  }
+]

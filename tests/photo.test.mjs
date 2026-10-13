@@ -1,0 +1,4 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import{topics,photoTask,cropFor,viewPoint,iou}from'../dist/photo-data.js';
+test('photo tasks include eleven distinct composition topics and alternate imagery',()=>{assert.equal(topics.length,11);assert.equal(new Set(Array.from({length:11},(_,i)=>photoTask(i+1).topic.id)).size,11);assert.notEqual(photoTask(1,'thirds').id,photoTask(12,'thirds').id);assert.equal(photoTask(34,'vanishing').mirror,true);});
+test('crop coordinate conversion places a chosen subject at intended position',()=>{const c=cropFor([.817,.525],[2/3,2/3],.5),p=viewPoint([.817,.525],c);assert.ok(Math.abs(p[0]-2/3)<1e-9);assert.ok(Math.abs(p[1]-2/3)<1e-9);assert.ok(c.x>=0&&c.y>=0&&c.x+c.w<=1&&c.y+c.h<=1);});
+test('frame-region agreement distinguishes overlap from unrelated region',()=>{assert.ok(Math.abs(iou([.4,.2,.3,.5],[.4,.2,.3,.5])-1)<1e-9);assert.equal(iou([0,0,.1,.1],[.4,.2,.3,.5]),0);});
