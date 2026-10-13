@@ -1,0 +1,5 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import{defaults,pose,verticalFov,validate,pathLength}from'../dist/motion.js';
+test('Dolly reaches user endpoints and changes distance',()=>{let s=defaults();assert.deepEqual(pose(s,0),s.start);assert.deepEqual(pose(s,1),s.end);s.end.x=5;assert.equal(pose(s,1).x,5);assert.ok(pathLength(s)>8);});
+test('Orbit preserves radius and rotates 90 degrees',()=>{let s={...defaults(),mode:'orbit',start:{x:0,y:2,z:8},arc:90};const p=pose(s,1);assert.ok(Math.abs(p.x-8)<1e-9);assert.ok(Math.abs(p.z)<1e-9);for(let i=0;i<10;i++)assert.ok(Math.abs(Math.hypot(pose(s,i/9).x,pose(s,i/9).z)-8)<1e-9);});
+test('full-frame crop FOV decreases as focal length grows',()=>{assert.ok(verticalFov(24)>verticalFov(70));assert.ok(Math.abs(verticalFov(24)-45.747)<.01);});
+test('import rejects corrupt settings without coercion',()=>{assert.throws(()=>validate({...defaults(),focal:Infinity}));assert.throws(()=>validate({...defaults(),track:'false'}));assert.deepEqual(validate(defaults()),defaults());});
